@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-on-1 Lesson</title>
+    <style>
+        body {
+          background-color: rgb(223, 247, 219);
+        }
+        h1 { 
+          background: white;
+          color: rgb(108, 67, 0);
+          text-align: center;
+          font-family: Lucida Console;
+        }
+        h2 { 
+          color: rgb(108, 67, 0);
+          text-align: center;
+          font-family: Lucida Console;
+          font-size: 50px;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: rgb(40, 68, 40);
+        font-family: Lucida Console;
+        font-size: 20px;
+        }
+    
+        li {
+        float: left;
+        border-right: 3px solid #bbb;
+        }
+        li:last-child {
+        border-right: none;
+        }
+    
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+    
+        li a:hover:not(.active) {
+        background-color: rgb(249, 196, 5);
+        }
+    
+        .active {
+        background-color: #7fad47;
+        }
+    
+        p {
+        font-family: Lucida Console;
+        font-size: 24px;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+  font-family: lucida Console;
+}
+
+input[type=submit] {
+  background-color: #7fad47;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: lucida Console;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(249, 196, 5);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(40, 68, 40);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+p.small {
+  line-height: 1;
+}
+
+</style>        
+</head>
+<body>
+    <h1><a target="_blank" href="index.html"><img src="image/bikes4ulogo.png" alt="Bikes4U Logo"></a></h1>
+        <ul><div class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="greatplacestoride.html">Great places to Ride</a></li>
+            <li><a class=active href="1on1lesson.html">1-on-1 Lesson</a></li>
+            <li><a href="ourshop.html">Our Shop</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li></div>
+        </ul>
+        <h1></h1>
+    <img src="image/everyonecanrideabike.jpg" alt="Everyone can ride a bike" width="1000" height="500">
+    <h2>Q&A</h2>
+    <p class="small">Q: Who can Join the lesson?<br>A: Everyone who is interested in cycling.</p>
+    <p class="small">Q: Who is going to teach me? <br>A: Our fantastic team of instructors have a wealth of experience teaching youngsters and beginners combined with background of international competition.</p>
+    <p class="small">Q: How many lessons for one programme?<br>A: There are 8 lessons for each student, including learning to ride a bicycle, the road rules.</p>
+    <p class="small">Q: How much is the course?<br>A: If you buy a bike in our shop, it would be free of charge.  Or you can pay £100 for the course.</p>
+    <h2>Request Form</h2>
+    <p>If you are interested in our lesson or you have any enquires, please feel free to leave us a message, we will contact you as soon as possible.</p>
+
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Email Address">
+            </div>
+          </div>      
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
+</body>
+</html>

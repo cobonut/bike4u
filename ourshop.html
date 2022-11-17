@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shop</title>
+    <style>
+        body {
+          background-color: rgb(223, 247, 219);
+        }
+        h1 { 
+          background: white;
+          color: rgb(108, 67, 0);
+          text-align: center;
+          font-family: Lucida Console;
+        }
+        h2 { 
+          color: rgb(108, 67, 0);
+          text-align: center;
+          font-family: Lucida Console;
+          font-size: 50px;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: rgb(40, 68, 40);
+        font-family: Lucida Console;
+        font-size: 20px;
+        }
+    
+        li {
+        float: left;
+        border-right: 3px solid #bbb;
+        }
+        li:last-child {
+        border-right: none;
+        }
+    
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+    
+        li a:hover:not(.active) {
+        background-color: rgb(249, 196, 5);
+        }
+    
+        .active {
+        background-color: #7fad47;
+        }
+    
+        p {
+        font-family: Lucida Console;
+        font-size: 24px;
+        }
+#shop {
+  font-family: Lucida Console;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#shop td, #shop th {
+  font-family: lucida console;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#shop tr:nth-child(even){background-color: #f2f2f2;}
+
+#shop tr:hover {background-color: #ddd;}
+
+#shop th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(108, 67, 0);
+  color: white;
+}
+</style>
+</head>
+<body>
+    <h1><a target="_blank" href="index.html"><img src="image/bikes4ulogo.png" alt="Bikes4U Logo"></a></h1>
+        <ul><div class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="greatplacestoride.html">Great places to Ride</a></li>
+            <li><a href="1on1lesson.html">1-on-1 Lesson</a></li>
+            <li><a class=active href="ourshop.html">Our Shop</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li></div>
+        </ul>
+        <h1></h1>
+        <p>For details, please come to visit our shop.</p>
+        <table id="shop">
+            <tr>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Photo</th>
+              <th>Colour</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Pinnacle</td>
+              <td>Arkose 2 Gravel Bike</td>
+              <td><img src="image/pinnacle.jpeg" alt="Pinnacle"></td>
+              <td>Blue</td>
+              <td>£950</td>
+            </tr>
+            <tr>
+              <td>Brompton</td>
+              <td>Electric C Line Explore - High Handlebar</td>
+              <td><img src="image/brampton.jpeg" alt="Brampton"></td>
+              <td>Turkish Green</td>
+              <td>£2,995</td>
+            </tr>
+            <tr>
+              <td>Trek</td>
+              <td>Domane AL 4 Disc 2022 Road Bike</td>
+              <td><img src="image/trek.jpeg" alt="Trek"></td>
+              <td>Gloss Black</td>
+             <td>£1,625</td>
+            </tr>
+            <tr>
+              <td>Specialized</td>
+              <td>Turbo Levo Comp Alloy 2022 Electric Mountain Bike</td>
+              <td><img src="image/Specialized.jpeg" alt="Specialized"></td>
+              <td>Sage Green</td>
+              <td>£6,099</td>
+            </tr>
+            <tr>
+              <td>Muddyfox</td>
+              <td>Atom BMX Bike</td>
+              <td><img src="image/bmx.jpeg" alt="Muddyfox"></td>
+              <td>Red / Black</td>
+              <td>£115</td>
+            </tr>
+          </table>
+    
+</body>
+</html>
